@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="row row_main">
+    <div class="row row_nav">
+      <ul class="ul_nav">
+        <% @nav_list.each do |nav|%>
+          <li>
+            <a href="#"> <%= nav %> </a>
+          </li>
+
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="row row_search">
+      <div class="searchbar">
+        <form action="#" method="post">
+          <input type="month" name="selectMonth">
+          <select class="place" name="place" placeholder="어디로">
+            <option value="">서울
+            <option value="">경상도
+            <option value="">충청도
+            <option value="">전라도
+          </select>
+          <select class="what" name="what" placeholder="어떤축제">
+            <option value="">음악
+            <option value="">패션
+            <option value="">종교
+            <option value="">전통문화
+          </select>
+          <button type="submit" name="button">submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row row_event">
+    <div class="hot_event">
+    </div>
+  </div>
+
+  <div class="row row_banner">
+    <div class="banner">
+      <h2><%= @nav_list[2] %></h2>
+    </div>
+  </div>
+
+</div>
